@@ -40,8 +40,16 @@ p {
   max-width: 700px;
 }
 
+ul {
+  padding: 0
+}
+
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 article span {
