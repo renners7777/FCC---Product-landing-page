@@ -1,0 +1,62 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 1em 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+#nav-bar {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav-link {
+  margin: 0.5em;
+  list-style-type: none;
+}
+
+span {
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 0.25em;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+a {
+  text-decoration: none;
+}
+
+article span {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+  padding: 0 1em;
+}
+
+main iframe {
+  margin-bottom: 2em
+}
