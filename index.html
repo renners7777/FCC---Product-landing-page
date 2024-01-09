@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
+        <a id="top"></a>
         <header id="header">
-            <a id="top"></a>
             <img src="https://chrisrenshawportfolio.netlify.app//Images/CRlogo.png" alt="Software Engineer Logo" id="header-img" height="75px" width="100px">
             <nav id="nav-bar">
                 <ul>
@@ -78,10 +78,20 @@ additional needs or challenges that did not present themselves in the planning p
         </section>
 
         <footer>
-            <div class="backToTop">
-            <a href="#top">Back to top</a>
-            </div>
+            <h2>Contact</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="text" name="name" id="name" placeholder="Enter name..." required="true">
+                <input type="email" name="email" id="email" placeholder="Enter email..." required="true">
+                <textarea name="" id="message" cols="20" rows="5" placeholder="Enter message..."></textarea>
+                <input id="submit" type="submit" title="submit" value="submit">
+            </form>
+
+            <p>&#169; Chris Renshaw 2024</p>
+            
         </footer>
+        <div class="backToTop">
+            <a href="#top">Back to top</a>
+        </div>
     
     </body>
 </html>
