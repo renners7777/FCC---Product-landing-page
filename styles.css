@@ -3,7 +3,7 @@
 }
 
 body, html {
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
   background-color: whitesmoke;
 }
@@ -13,6 +13,10 @@ body, html {
   flex-direction: row;
   align-items:flex-start;
   justify-content: space-between;
+}
+
+img {
+  margin: 2em;
 }
 
 #nav-bar {
@@ -42,10 +46,6 @@ p {
   font-size: 1.25rem;
   line-height: 1.5;
   max-width: 700px;
-}
-
-ul {
-  padding: 0;
 }
 
 a {
