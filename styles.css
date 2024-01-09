@@ -74,3 +74,24 @@ main iframe {
 .hero {
   border-bottom: 1px dotted #3c3434;  
 }
+
+footer {
+  margin-top: 1em;
+}
+
+footer a {
+  border: 1px solid #322d2d;
+  background-color:aqua;
+  padding: 0.25em 0.5em;
+  border-radius: 20px;
+}
+
+footer a:hover {
+  background-color: rgba(0, 255, 255, 0.60);
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 1em;
+  right: 0.125em;
+}
