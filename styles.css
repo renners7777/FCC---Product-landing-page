@@ -11,26 +11,87 @@ body, html {
 #header {
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
-  justify-content: space-between;
-}
-
-img {
-  margin: 2em;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 #nav-bar {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 .nav-link {
-  padding: 0;
-  color:#000;
-  margin: 0.5em;
+  color:whitesmoke;
   list-style-type: none;
 }
+
+/* Links inside the navbar */
+#nav-bar a {
+  float: left;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.menu {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.menu .menu-btn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.menu-btn:hover {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.menu-content {
+  display:none;
+  position: absolute;
+  background-color: #332;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.menu-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.menu-content a:hover {
+  background-color: #272323;
+}
+
+/* Show the dropdown menu on hover */
+.menu:hover .menu-content {
+  display: block;
+} 
 
 h1 {
   font-size: 2rem;
@@ -49,13 +110,7 @@ p {
 }
 
 a {
-  font-size: 1.25rem;
   text-decoration: none;
-}
-
-li {
-  padding: 0.25em 0;
-  list-style-type: none;
 }
 
 a:hover {
@@ -64,12 +119,13 @@ a:hover {
 }
 
 main {
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   text-align: center;
-  padding: 0 1em;
+  padding: 1em;
 }
 
 main iframe {
@@ -131,21 +187,4 @@ textarea {
 #submit:hover {
   background-color: rgb(176, 152, 123);
   cursor: pointer;
-}
-
-.backToTop a {
-  border: 1px solid #322d2d;
-  background-color:aqua;
-  padding: 0.25em 0.5em;
-  border-radius: 20px;
-}
-
-.backToTop a:hover {
-  background-color:aquamarine;
-}
-
-.backToTop {
-  position: fixed;
-  bottom: 1em;
-  right: 0.125em;
 }
