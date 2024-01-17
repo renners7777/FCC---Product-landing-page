@@ -165,8 +165,9 @@ footer h2 {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 0.5em;
-  width: 50%;
+  width: 300px;
 }
 
 #name, 
