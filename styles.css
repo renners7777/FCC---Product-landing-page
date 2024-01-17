@@ -11,7 +11,7 @@ body, html {
 #header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   width: 100%;
   background-color: #333;
@@ -125,14 +125,18 @@ main {
   align-items: center;
   gap: 1em;
   text-align: center;
-  padding: 1em;
+  padding: 2em;
+}
+
+img {
+  margin: 1.5em 0;
 }
 
 main iframe {
   margin-bottom: 2em;
 }
 
-.hero {
+.hero-top {
   border-bottom: 1px dotted #3c3434;  
 }
 
@@ -187,4 +191,47 @@ textarea {
 #submit:hover {
   background-color: rgb(176, 152, 123);
   cursor: pointer;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  padding-top: 1.5em;
+  width: 250px;
+  height: 300px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #a39797;
+  margin: 1em;
+  border-radius: 15px;
+}
+
+.btn {
+  padding: 1em;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: antiquewhite;
+}
+
+.btn:hover {
+  background-color:bisque;
+}
+
+@media (min-width: 650px) {
+  #header {
+    justify-content: space-between;
+    padding: 0 3em;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
